@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Heroes</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="quiz.css">
+    <script defer src="script.js"></script>
+    <script defer src="quiz.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>       
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo" width="60" height="50"> 
+        </div>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="page2.html">Legislation</a></li>
+            <li><a href="page3.html">Hacking</a></li>
+            <li><a href="page4.html">Forensics</a></li>                
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#Contact">Contact</a></li>
+            <li><a href="page5.html" class="active">Quiz</a></li>
+        </ul>
+            <div class="burger">&#9776;</div>
+        </nav>
+    </header>
+
+<!-- Main section -->
+<section class="quiz">
+  <div class="quiz-container">
+    <!-- Progress Bar -->
+    <div class="progress-bar">
+      <span id="progress">1 / 20</span> <!-- Default progress value -->
+    </div>
+
+    <!-- Question Section -->
+    <div class="question" id="question-container">
+      <!-- Questions will be dynamically rendered here -->
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation">
+      <button id="prev-button" disabled>← Back</button>
+      <button id="next-button" disabled>Next →</button>
+    </div>
+
+    <!-- Result Section -->
+    <div id="result-container" class="hidden">
+      <h2>Quiz Results</h2>
+
+      <!-- Score Circle -->
+      <div class="score-circle" id="score-circle">
+        <svg width="120" height="120" viewBox="0 0 120 120">
+          <circle cx="60" cy="60" r="50" stroke="#ddd" stroke-width="10" fill="none"></circle>
+          <circle
+            cx="60"
+            cy="60"
+            r="50"
+            stroke="#4facfe"
+            stroke-width="10"
+            fill="none"
+            stroke-dasharray="314"
+            stroke-dashoffset="314"
+            id="score-ring"
+            style="transform: rotate(-90deg); transform-origin: 50% 50%;"
+          ></circle>
+        </svg>
+        <div class="score-text">
+          <span id="score-percentage">0%</span>
+        </div>
+      </div>
+
+      <!-- Final Score Message -->
+      <p class="score" id="final-score"></p>
+
+      <!-- Retake Button -->
+      <div class="retake">
+        <button id="retake-quiz-button" class="retake-bt">Retake Quiz</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+  
+    
+     <!-- Footer -->
+     <footer>
+      <nav class="foot-nav">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="page2.html" >Legislation</a></li>
+          <li><a href="page3.html">Hacking</a></li>
+          <li><a href="page4.html">Forensics</a></li>                
+          <li><a href="index.html#About">About</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
+          <li><a href="page5.html" class="active">Quiz</a></li>
+      </ul>
+      </nav>
+      <p class="copy">&copy; 2025 HTML Heroes. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

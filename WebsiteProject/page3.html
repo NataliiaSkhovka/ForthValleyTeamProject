@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Heroes</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo" width="60" height="50"> 
+        </div>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="page2.html">Legislation</a></li>
+            <li><a href="page3.html" class="active">Hacking</a></li>
+            <li><a href="page4.html">Forensics</a></li>                
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#Contact">Contact</a></li>
+            <li><a href="page5.html">Quiz</a></li>
+        </ul>
+            <div class="burger">&#9776;</div>
+        </nav>
+    </header>
+
+<!--Picture  -->
+<section class="hero-page" style="background-image: url('img/ethical_hacker.png');">
+    <div class="page-box">
+        <div class="page-title">
+            <h2 class="page-h2 tracking-in-expand-fwd" >The Role of Ethical Hacker</h2>
+        </div>
+        <div class="page-subtitle">
+            <h3 class="page-h3 tracking-in-contract-bck-bottom">Ethical hacking involves authorized attempts to identify and exploit vulnerabilities in computer systems, 
+                networks, or software to improve their security.</h3>
+        </div>
+    </div>
+    </section>
+
+<!--Content  -->
+<section class="page-content">
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 grey tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText4', 'toggleIcon')">
+            Explanation of ethical hacking &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText4" style="display: none;">
+              <p>
+                <br><b class="text-subs">What Is Ethical Hacking?</b> 
+                <br>Ethical hacking refers to the authorized practice of identifying and exploiting vulnerabilities in systems to improve their security. Ethical hackers, 
+                    also known as white-hat hackers, use their skills to mimic the actions of malicious hackers but in a lawful and beneficial way.
+                <br><br><br><b class="text-subs">Purpose of Ethical Hacking:</b>
+                <br>•	To prevent breaches by identifying vulnerabilities before attackers exploit them.
+                <br>•	To improve security systems by testing defenses under real-world conditions.
+                <br>•	To protect sensitive data by mitigating risks in applications and infrastructure.
+                <br><br><br><b class="text-subs">Techniques Used in Ethical Hacking:</b>
+                <br><b>Penetration Testing: </b> Simulating attacks to find weak points in networks, applications, or systems.
+                <br><br><b>Vulnerability Scanning: </b> Using tools like Nessus or OpenVAS to identify known vulnerabilities.
+                <br><br><b>Social Engineering Tests: </b> Mimicking phishing attempts or pretexting to evaluate employee awareness.
+                <br><br><br><b class="text-subs">Examples of Ethical Hacking:</b>  
+                <br><b>Bug Bounty Programs: </b> Companies like Google, Facebook, and Microsoft reward ethical hackers for reporting security flaws. For instance, a hacker discovered a vulnerability in Tesla’s systems and was awarded $15,000.
+                <br><br><b>Penetration Testing: </b> A cybersecurity firm identifies a misconfigured firewall in a bank, preventing a potential ransomware attack.
+                <br><br><b>Compliance Testing: </b> Ethical hackers ensure systems comply with security standards like ISO 27001, PCI-DSS, or GDPR.
+                <br><br>Ethical hacking is conducted with permission, in contrast to malicious hacking, which is unauthorized and illegal.
+              </p>                
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText4', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                    <!-- hide -->
+                </span>
+            </span> 
+    </div>
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 blue tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText1', 'toggleIcon')">
+            Examples of current and historical cybercrime &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText1" style="display: none;">
+              <p>
+                    <br><b class="text-subs">Historical Cybercrime Examples:</b>
+                    <br><b>&emsp;&emsp;~ Morris Worm (1988): </b>One of the first worms spread over the internet, created by Robert Tappan Morris, a graduate student at Cornell University. Morris designed the worm to measure 
+                     the size of the internet. It exploited vulnerabilities in Unix systems and replicated itself excessively, causing denial-of-service (DoS) attacks. 
+                      The Breach was disrupted Iran's nuclear program by causing 
+                      centrifuges to spin out of control, damaging equipment. It infected approximately 10% of the computers connected to the internet at the time. 
+                      <br><br><b class="text-subs5"><i>How Could It Have Been Prevented?</i></b> Strengthen physical and logical security measures, disable USB ports
+                      where not needed, and monitor SCADA systems for unusual activity could prevent this.
+                      <br><br><br><b>&emsp;&emsp;~ Melissa Virus (1999): </b> The Melissa virus was created by David L. Smith, a programmer from New Jersey.
+                     Smith claimed he created the virus as a prank and did not intend for it to cause as much damage as it did. However, it ended up spreading uncontrollably.
+                     The virus was a Microsoft Word macro virus that spread through email. When a user opened an infected Word document attached to an email, the virus would automatically send itself to the first 50 contacts in the victim’s 
+                     Microsoft Outlook address book. This rapid spread overloaded email servers, causing significant disruption to companies and government agencies.
+                     <br><br><b class="text-subs5"><i>How Could It Have Been Prevented?</i></b> Warning users about opening email attachments from unknown sources; using email security tools to scan and block suspicious attachments;
+                     disabling macros in Microsoft Word by default; updating antivirus definitions to detect and block macro viruses.
+                     <br><br><br><b>&emsp;&emsp;~ Target Data Breach (2013): </b>The attack was carried out by a group of cybercriminals, possibly linked to Eastern European hackers. The stolen data was later sold on the dark web.
+                     The hackers aimed to steal credit card data and personal information from millions of customers for financial gain.
+                     The hackers gained access to Target's network using stolen credentials from a third-party HVAC (heating, ventilation, and air conditioning) vendor.
+                     Once inside the system, they installed malware on Target’s point-of-sale (POS) systems, which captured credit card details of customers when they made purchases.
+                     The stolen data was then exfiltrated (sent out) to external servers controlled by the attackers.
+                     <br><br><b class="text-subs5"><i>How Could It Have Been Prevented?</i></b> Target should have restricted third-party access to sensitive systems and enforced multi-factor authentication (MFA).
+                     If Target had isolated its payment systems from other parts of its network, hackers might not have been able to access the POS systems.
+                     The company should have used real-time monitoring to detect unusual activity on its network.
+                     Conducting frequent cybersecurity assessments to identify and fix vulnerabilities.
+                     Encrypting credit card data at every stage of processing to make it useless to hackers.
+                     This breach cost Target over $200 million in legal fees, settlements, and security upgrades, highlighting the importance of strong cybersecurity measures.
+                    <br><br><br><b class="text-subs">Current Cybercrime Examples:</b>
+                    <br><b>&emsp;&emsp;~ Colonial Pipeline Ransomware Attack (2021): </b> A Russian cybercriminal group known as DarkSide.
+                     The group deployed ransomware, likely entering the network through a compromised VPN password. The ransomware encrypted critical systems, halting pipeline operations.
+                     Disruption to fuel supplies across the U.S. East Coast. The company paid $4.4 million in Bitcoin to the attackers.
+                    <br><br><b class="text-subs5"><i>How Could It Have Been Prevented?</i></b>  Use multi-factor authentication (MFA) for remote access, regularly update and patch systems, and train employees on identifying phishing attempts.
+                    <br><br><br><b>&emsp;&emsp;~  MOVEit Cyber Attack (2023): </b> In 2023, hackers targeted MOVEit, a file-sharing software used by many big companies. The Clop ransomware group found a flaw in the software that let them break in and 
+                    steal sensitive data from businesses like IBM, Deloitte, and Ernst & Young. They then demanded money from these companies, threatening to leak the stolen data if they didn’t pay. This attack highlighted the risks of using 
+                    third-party software and how important it is to fix security issues quickly. Clop is a Russian-speaking cybercriminal group known for ransomware and extortion attacks. Instead of encrypting files like traditional ransomware,
+                    Clop steals sensitive data and demands a ransom to prevent its public release—a tactic called double extortion. Clop hackers discovered a zero-day vulnerability (a security flaw unknown to the software maker) in MOVEit Transfer, a widely used file-sharing software. 
+                    This vulnerability (later named CVE-2023-34362) allowed hackers to inject malicious code into MOVEit servers. 
+                    The flaw in MOVEit was an SQL injection vulnerability, which means hackers could send malicious commands to the database through the software’s web interface. 
+                    By exploiting this flaw, Clop gained control over the database and accessed sensitive data stored by organizations.
+                    Once inside, Clop exfiltrated massive amounts of personal and corporate data from companies using MOVEit. 
+                    This included employee records, customer information, financial documents, and other sensitive files. 
+                    Instead of encrypting the data like in a typical ransomware attack, Clop used double extortion: 
+                    They contacted victims and demanded a ransom in exchange for not leaking their stolen data. 
+                    If companies refused to pay, Clop threatened to publish the data on their dark web leak site.  
+                    <br><br><b class="text-subs5"><i>How Could It Have Been Prevented?</i></b> Third-party software risks: Even secure companies can be vulnerable if they rely on software with hidden security flaws. 
+                    SQL injection is still a major threat, even though it’s one of the oldest hacking techniques. 
+                    Zero-day vulnerabilities are highly valuable to hackers and need immediate patching once discovered. 
+                    Double extortion tactics are becoming more common, where hackers steal data and demand payment rather than just locking systems with ransomware.                   
+              </p>                
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText1', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                    <!-- hide -->
+                </span>
+            </span> 
+    </div> 
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 grey tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText2', 'toggleIcon')">
+            Examples of current and historical threats in cybercrime &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText2" style="display: none;">
+              <p>
+                <br><b class="text-subs">Historical Threats:</b>
+                <br><b>&emsp;&emsp;~ Stuxnet (2010): </b> Allegedly developed by the U.S. and Israeli governments. A worm specifically targeted Siemens PLCs controlling Iranian nuclear centrifuges. It was introduced through infected USB drives, bypassing air-gapped networks.
+                 Disrupted Iran's nuclear program by causing centrifuges to spin out of control, damaging equipment.
+                <br><br><b class="text-subs5"><i>How Could It Have Been Prevented? </i></b> Strengthen physical and logical security measures, disable USB ports where not needed, and monitor SCADA systems for unusual activity.
+                <br><br><br><b>&emsp;&emsp;~ Log4Shell Exploit (2021): </b> Exploited by various threat actors, including nation-state groups and cybercriminals.
+                Attackers exploited a vulnerability in the Log4j library to execute arbitrary code remotely by sending specially crafted requests.
+                Widespread exploitation affected thousands of organizations using Log4j, from small businesses to large enterprises.
+                <br><br><b class="text-subs5"><i>How Could It Have Been Prevented? </i></b>  Regularly update and patch open-source dependencies, and implement intrusion detection systems (IDS) to catch suspicious requests.
+                <br><br><br><b class="text-subs">Current Threats:</b>
+                <br><b>&emsp;&emsp;~ AI-Enhanced Cybercrime: </b> Cybercriminals, including nation-state actors, organized cybercrime groups, and individual hackers, are leveraging AI to automate and enhance their attacks.
+                <br><br><b class="text-subs4">AI enables attackers to:</b>
+                <br><br>&emsp;•	Create highly personalized phishing emails that mimic real messages and fool even tech-savvy users.
+                <br>&emsp;•	Develop AI-powered malware that adapts and evades detection.
+                <br>&emsp;•	Automate password cracking and credential stuffing attacks at an unprecedented scale.
+                <br><br>Attackers use AI to scrape social media, emails, and online data to craft realistic messages that trick users into clicking malicious links.
+                AI-generated deepfake videos or audio are used to impersonate executives or employees to commit fraud (e.g., Business Email Compromise (BEC) scams).
+                Some malware uses machine learning to detect and bypass antivirus software or modify itself to remain undetected.
+                <br><br><b class="text-subs5"><i>How Could It Have Been Prevented? </i></b> Using AI-driven cybersecurity tools to detect unusual patterns and prevent attacks.
+                Training employees to recognize AI-driven phishing attempts.
+                Multi-Factor Authentication (MFA) reduces the risk of credential theft.
+                Email filtering & anomaly detection, implementing advanced spam filters that detect AI-generated phishing emails.
+                <br><br><br><b>&emsp;&emsp;~ Zero-Day Exploits: </b> Cybercriminal groups, nation-state actors, and independent hackers searching for vulnerabilities to exploit before security patches are available.
+                Some zero-days are sold on the dark web to the highest bidder. Zero-day exploits allow attackers to breach systems before a fix is available, making them highly effective for espionage, financial gain, or sabotage.
+                Companies and governments often scramble to patch the flaws, leaving systems vulnerable for days, weeks, or even months.
+                Hackers discover an unknown vulnerability in software, operating systems, or hardware.
+                They develop exploit code and use it to gain unauthorized access, steal data, or install malware.
+                <br><br><b class="text-subs4">Example: Log4Shell (2021)</b>
+                Attackers exploited a vulnerability in Apache Log4j, a widely used logging framework, allowing them to execute remote code on affected systems.
+                This impacted millions of devices worldwide, including cloud services, enterprise software, and government systems.
+                <br><br><b class="text-subs5"><i>How Could It Have Been Prevented? </i></b> Organizations must quickly update systems when security patches are released.
+                Zero-Trust Security Model, never trust any system or user by default, reducing the impact of zero-day attacks.
+                Bug Bounty Programs, encouraging ethical hackers to report vulnerabilities before criminals exploit them.
+                Threat Intelligence & Monitoring, using AI-driven security tools to detect suspicious activity that may indicate a zero-day attack.
+                <br><br><br><b>&emsp;&emsp;~ Advanced Persistent Threats (APTs): </b> APTs are highly skilled, well-funded hacking groups, often backed by nation-states like China, Russia, North Korea, and Iran.
+                <br><br><b class="text-subs4">Example: APT29 (Cozy Bear)</b> – linked to Russia and suspected in attacks on U.S. government agencies.
+                <br><br><b class="text-subs4">Example: APT10 (China-linked)</b> – targeted global corporations for industrial espionage.
+                <br>APTs aim for long-term access to a target’s network to steal sensitive information, disrupt operations, or conduct espionage.
+                They often remain undetected for months or years, continuously gathering intelligence.
+                Supply Chain Attacks: Hackers compromise third-party vendors to infiltrate larger targets.
+                <br><br><b class="text-subs4">Example: SolarWinds Attack (2020)</b>
+                APT hackers inserted malicious code into SolarWinds' software updates.
+                When customers (including U.S. government agencies and Fortune 500 companies) installed updates, attackers gained backdoor access to their networks.
+                <br><br><b class="text-subs4">Spear Phishing:</b> Targeting key employees with realistic emails to steal credentials.
+                <br><br><b class="text-subs4">Zero-Day Exploits:</b> Using unknown vulnerabilities to gain access.
+                <br><br><b class="text-subs5"><i>How Could It Have Been Prevented? </i></b> Network Segmentation, isolate critical systems to limit attacker movement.
+                Supply Chain Security, vet and monitor third-party vendors.
+                Threat Hunting, proactively search for signs of APT activity.
+                Multi-Layered Security, using endpoint detection, AI-based anomaly detection, and strong authentication methods.
+                <br>These cyber threats show the evolving landscape of cybersecurity risks. Organizations need to stay proactive by implementing AI-driven security tools, continuous monitoring, and employee training to stay ahead of attackers.
+              </p>                
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText2', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                    <!-- hide -->
+                </span>
+            </span> 
+    </div>
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 blue tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText3', 'toggleIcon')">
+            Examples of current and historical techniques deployed by cyber criminals &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText3" style="display: none;">
+              <p>
+                <br><b class="text-subs">Historical Techniques: </b>
+                    <br><br><b>&emsp;&emsp;~ Social Engineering: </b> Cybercriminals and hackers use deception to manipulate people into divulging sensitive information.                    
+                      Attackers use techniques like phishing (fraudulent emails), pretexting (fabricated scenarios), and baiting (offering something desirable) to trick victims.
+                      <br><br><b class="text-subs4">Example: The "Love Bug" virus (2000)</b> spread via an email attachment titled "ILOVEYOU." When opened, it overwrote system files and sent itself to contacts, infecting millions of computers.
+                      <br><br><b class="text-subs4">Example: Twitter Hack (2020)</b>, hackers impersonated Twitter employees to gain access to high-profile accounts (e.g., Elon Musk, Bill Gates) and promote a cryptocurrency scam.
+                      <br>Social engineering exploits human trust rather than technical vulnerabilities, making it one of the most effective hacking techniques.
+                      <br><br><b class="text-subs5"><i>How to Prevent? </i></b> Employee training, teach users to recognize phishing and impersonation scams.
+                      Multi-Factor Authentication (MFA), adds an extra layer of security against unauthorized access.
+                      Access controls, limit user privileges to minimize exposure.
+                      <br><br><br><b>&emsp;&emsp;~ Keylogging: </b> Malware developers, hackers, and cybercriminals looking to steal login credentials and personal data.
+                      Keyloggers are malware programs or hardware devices that capture every keystroke a user types.
+                      <br><br><b class="text-subs4">Example: Zeus malware (discovered in 2007)</b> infected millions of devices, logging credentials and allowing hackers to steal banking information.
+                      <br>Keyloggers are used for financial fraud, identity theft, and corporate espionage.
+                      <br><br><b class="text-subs5"><i>How to Prevent? </i></b> Antivirus and anti-malware tools, detect and remove keyloggers.
+                      Virtual keyboards, prevent keylogging by generating randomized input fields.
+                      Regular security updates, patch vulnerabilities that keyloggers exploit.
+                      <br><br><br><b>&emsp;&emsp;~ Trojan Horses: </b> Hackers and cybercriminals disguise malware as legitimate software to trick users into installing malicious programs.
+                      Trojans appear as useful software but contain hidden malware that grants remote access or steals data.
+                      <br><br><b class="text-subs4">Example: Back Orifice Trojan (1998)</b> – Created by hacker group Cult of the Dead Cow, this trojan provided remote access to infected machines without the user's knowledge.
+                      <br>Used for data theft, spying, and launching cyberattacks on organizations.
+                      <br><br><b class="text-subs5"><i>How to Prevent? </i></b>Avoid untrusted downloads, only install software from official sources.
+                      Use endpoint protection, monitor and block suspicious applications.
+                      Regular system audits, identify and remove unauthorized software.
+                      <br><br><b class="text-subs">Current Techniques:</b>
+                      <br><br><br><b>&emsp;&emsp;~ Ransomware-as-a-Service (RaaS): </b> Cybercriminal groups like REvil, DarkSide, and LockBit sell ransomware kits to other attackers.
+                      RaaS providers offer ransomware tools for a fee or a share of the ransom, enabling even low-skilled attackers to launch ransomware attacks.
+                      <br><br><b class="text-subs4">Example: Colonial Pipeline Attack (2021)</b> - DarkSide, a RaaS group, deployed ransomware to shut down fuel distribution in the U.S. East Coast, demanding millions in ransom.
+                      <br>RaaS makes ransomware accessible to anyone, leading to massive increases in cyber extortion.
+                      <br><br><b class="text-subs5"><i>How to Prevent? </i></b> Regular data backups, keep secure, offline backups.
+                      Endpoint Detection and Response (EDR), detect and stop ransomware before encryption begins.
+                      Proactive threat intelligence, monitor dark web activity for emerging threats.
+                      <br><br><br><b>&emsp;&emsp;~ Credential Stuffing: </b> Cybercriminals leveraging previous data breaches to gain unauthorized access to accounts.
+                      Attackers use automated tools to try stolen username/password combinations across multiple websites.
+                      <br><br><b class="text-subs4">Example: Disney+ Credential Stuffing Attack (2019)</b> -
+                      Hackers used leaked credentials from other breaches to gain access to Disney+ accounts, reselling them online.
+                      <br>People reuse passwords, making this method highly effective for account takeovers.
+                      <br><br><b class="text-subs5"><i>How to Prevent? </i></b>Use unique passwords, never reuse passwords across different sites.
+                      Enable MFA, prevents unauthorized logins even if credentials are stolen.
+                      Monitor for leaked credentials, use services like Have I Been Pwned to check if credentials have been compromised.
+                      <br><br><br><b>&emsp;&emsp;~ Deepfake Scams: </b> Cybercriminals use AI-generated voice or video to impersonate executives and deceive employees.
+                      Attackers use AI tools to create realistic fake audio and video, fooling victims into wiring money or disclosing secrets.
+                      <br><br><b class="text-subs4">Example: CEO Fraud Deepfake Scam (2019)</b> -
+                      Cybercriminals used AI-generated voice to impersonate a company’s CEO, convincing an employee to transfer $243,000 to a fraudulent account.
+                      <br>Deepfakes bypass traditional fraud detection methods and can be used for financial scams, blackmail, and political manipulation.
+                      <br><br><b class="text-subs5"><i>How to Prevent? </i></b>Verify requests, use multi-person approvals for financial transactions.
+                      Monitor AI threats, train employees to recognize signs of deepfake fraud.
+                      Voice authentication, use code words or biometric verification for sensitive communications.
+              </p>                
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText3', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                    <!-- hide -->
+                </span>
+            </span> 
+    </div>
+    </section>
+
+     <!-- Footer -->
+     <footer>
+      <nav class="foot-nav">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="page2.html">Legislation</a></li>
+          <li><a href="page3.html" class="active">Hacking</a></li>
+          <li><a href="page4.html">Forensics</a></li>                
+          <li><a href="index.html#About">About</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
+          <li><a href="page5.html">Quiz</a></li>
+      </ul>
+      </nav>
+      <p class="copy">&copy; 2025 HTML Heroes. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>

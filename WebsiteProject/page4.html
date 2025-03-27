@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Heroes</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        
+        <div class="logo">
+            <img src="img/logo.jpg" alt="Logo" width="60" height="50"> 
+        </div>
+        
+        <nav>
+          <ul class="nav-links">
+            <li><a href="index.html#home">Home</a></li>
+            <li><a href="page2.html">Legislation</a></li>
+            <li><a href="page3.html">Hacking</a></li>
+            <li><a href="page4.html" class="active">Forensics</a></li>                
+            <li><a href="index.html#About">About</a></li>
+            <li><a href="index.html#Contact">Contact</a></li>
+            <li><a href="page5.html">Quiz</a></li>
+        </ul>
+            <div class="burger">&#9776;</div>
+        </nav>
+    </header>
+
+<!--Picture  -->
+<section class="hero-page" style="background-image: url('img/forensics.png');">
+    <div class="page-box">
+        <div class="page-title">
+            <h2 class="tracking-in-expand-fwd">The Role of Digital Forensics Examiner</h2>
+        </div>
+        <div class="page-subtitle">
+            <h3 class="page-h3 tracking-in-contract-bck-bottom">Digital forensics is the process of identifying, preserving, analyzing, and 
+                presenting electronic evidence for use in legal or investigative contexts. 
+                </h3>
+        </div>
+    </div>
+    </section>
+
+<!--Content  -->
+<section class="page-content">
+    <div class="text container-cont">
+        <h3 class="explan-h3 grey tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText1', 'toggleIcon')">
+            Explanation of Digital Forensics &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i>
+        </h3>
+        <span id="hiddenText1" style="display: none;">
+            Digital forensics is the process of collecting, preserving, analyzing, and presenting digital 
+            evidence in a legally admissible manner. It involves investigating cybercrimes, data breaches,
+            and other digital incidents to support legal proceedings and cybersecurity measures.
+            <br><br>
+            <i><b class="text-subs4">Real-World Example</b></i>
+            <br><br>
+            One notable case in digital forensics is the 2014 Sony Pictures cyber-attack. Hackers infiltrated 
+            Sony’s network, stealing and leaking sensitive data, including unreleased films and confidential emails. 
+            Digital forensic experts were called in to trace the source of the attack, analyze the malware used, and
+            gather evidence that led to attribution of the breach to a nation-state actor. This case highlights the
+            importance of digital forensics in identifying cyber threats and holding perpetrators accountable.
+            <br><br>
+            <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText1', 'toggleIcon')">
+                <i class="fas fa-chevron-up"></i>
+            </span>
+        </span>  
+    </div>
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 blue tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText2', 'toggleIcon')">
+            Explanation of the main stages of digital forensics &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText2" style="display: none;">
+              <br><br><b>Identification</b> - Recognizing potential sources of digital evidence. For example, identifying a compromised workstation in a corporate network after a phishing attack.
+              <br><br><b>Preservation</b> - Ensuring data integrity by preventing tampering or alteration. This could involve making a forensic image of a suspect's hard drive using a write-blocker.
+              <br><br><b>Collection</b> - Acquiring relevant digital evidence from devices or networks. For instance, collecting log files from a server to investigate unauthorized access.
+              <br><br><b>Analysis</b> - Examining data to extract meaningful information. An example would be analyzing email headers to trace the origin of a phishing attempt.
+              <br><br><b>Documentation</b> - Recording all findings for legal and investigative purposes. This may include maintaining chain-of-custody records and generating detailed forensic reports.
+              <br><br><b>Presentation</b> - Summarizing evidence in a format that is understandable to stakeholders, including law enforcement and courts.
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText2', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i>
+                </span>
+            </span> 
+    </div> 
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 grey tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText3', 'toggleIcon')">
+            Explanation of the main roles &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText3" style="display: none;">
+             <br><br><b>Digital Forensic Analyst</b> - Conducts examinations and provides reports on findings.
+             <br><br><b>Incident Responder</b> - Detects and mitigates cyber threats in real time.
+             <br><br><b>Forensic Investigator</b> - Works closely with law enforcement to collect and analyze evidence.
+             <br><br><b>Cybersecurity Consultant</b> - Provides expert advice on improving security and forensic readiness.
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText3', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                </span>
+            </span> 
+    </div> 
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 blue tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText4', 'toggleIcon')">
+            Explanation of the legal, professional and ethical issues with conducting a forensics examination &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText4" style="display: none;">
+                <br>&nbsp;&nbsp;&nbsp;&nbsp; <b class="text-subs">Legal Considerations - adherence to laws such as :</b> 
+                <br><b>~ GDPR</b> (General Data Protection Regulation): If an examiner finds personal data during an investigation that is not directly related to the case, mishandling or processing this data could violate GDPR regulations.
+                <br>
+                <b><i class="text-subs4">Example: </i></b>A forensic investigation into a data breach uncovers private employee health records unrelated to the incident. Improper handling of these records could lead to legal action under GDPR.
+                <br><br>
+                <b>~ Computer Misuse Act:</b> Engaging in unauthorized access to systems or exceeding the authorized scope during an investigation could breach this law.
+                <br>
+                <b><i class="text-subs4">Example: </i></b>A forensic examiner accesses an employee's personal email account without explicit authorization, violating the Computer Misuse Act.
+                <br><br>
+                <b>~ Cybersecurity Information Sharing Act (CISA):</b> Sharing information discovered during an investigation without appropriate clearance or consent could breach this act.
+                <br>
+                <b><i class="text-subs4">Example: </i></b>Sharing cybersecurity threat data that inadvertently includes confidential business details with third-party organizations without proper anonymization.
+                <br>
+                <br>
+                <br><b class="text-subs">Professional Conduct</b> - maintaining :
+                <br>
+                <b>~ Confidentiality:</b> Forensic professionals must safeguard sensitive information discovered during investigations.
+                <br><b><i class="text-subs4">Example: </i></b> An examiner working on a corporate investigation accidentally reveals sensitive information about employee activities to unrelated parties within the organization.
+                <br><br><b>~ Integrity: </b>Ensuring findings are accurate and not tampered with, even under external pressure.
+                <br><b><i class="text-subs4">Example: </i></b> A company pressures a forensic examiner to modify a report to downplay evidence of internal fraud, testing the examiner's commitment to integrity.
+                <br><br><b>~ Impartiality:</b> Maintaining objectivity and avoiding bias in investigations.
+                <br><b><i class="text-subs4">Example: </i></b>  An examiner with a personal relationship with one of the subjects of an investigation might be tempted to withhold critical evidence.
+                <br>          
+                <br>
+                <br><b class="text-subs">Ethical Concerns :</b> 
+                <br>
+                <b>~ Avoiding Conflicts of Interest:</b>Forensic professionals must disclose relationships or circumstances that could compromise their objectivity.
+                <br>
+                <b><i class="text-subs4">Example: </i></b> A forensic examiner is hired to investigate a case involving a competitor of their current employer, creating a potential conflict of interest.
+                <br><br><b>~ Evidence Handling: </b> Ensuring the proper collection, preservation, and documentation of evidence to prevent tampering or loss.
+                <br><b><i class="text-subs4">Example: </i></b> An examiner temporarily stores digital evidence on an unsecured device, leading to data corruption and questions about the integrity of the evidence.
+                <br><br><br>
+                <span class="text-subs2" ><b><i>Scenarios Where Legal or Ethical Dilemmas Might Arise:</i> </b></span> 
+                <br><br>
+                <b>~ Unauthorized Access</b> - A forensic examiner might encounter data outside the investigation’s scope, raising privacy concerns.             
+                <br> 
+                <b><i class="text-subs4">Example: </i></b> While investigating a case of suspected fraud, the examiner discovers personal photos or unrelated confidential documents belonging to other employees.
+                <br><br>
+                <b>~ Chain of Custody Issues</b> - If evidence is not properly documented and handled, it may be inadmissible in court.             
+                <br> 
+                <b><i class="text-subs4">Example: </i></b>  An investigator fails to maintain a detailed chain of custody for a seized hard drive, leading to disputes about the authenticity of the evidence in court.
+                <br><br>
+                <b>~ Employer Requests</b> - A company might pressure an examiner to alter or withhold findings to protect their reputation.             
+                <br> 
+                <b><i class="text-subs4">Example: </i></b> A business instructs the examiner to delete evidence of their involvement in a breach to avoid legal penalties and negative publicity.
+                <br><br>
+                <b>~ International Cases</b> - Digital evidence stored in different jurisdictions may be subject to conflicting laws.             
+                <br> 
+                <b><i class="text-subs4">Example: </i></b> An investigation uncovers data stored in a country with stricter privacy laws than the country initiating the investigation, creating legal complications.
+                <br><br>
+                <b>~ Data Retention Conflicts</b> - Ethical concerns arise when deciding how long to retain sensitive or personal information found during an investigation.             
+                <br> 
+                <b><i class="text-subs4">Example: </i></b> An examiner finds personal data that could potentially serve future investigations but keeping it longer than necessary could violate data protection laws.
+                <br>
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText4', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                </span>
+            </span> 
+    </div> 
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 grey tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText5', 'toggleIcon')">
+            How to secure a crime scene &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText5" style="display: none;">
+                <br><b>Isolate the Scene </b> - Prevent unauthorized access to avoid contamination. 
+                <br><br><b>Document Everything </b> - Take photographs, videos, and notes. 
+                <br><br><b>Use Write-Blockers </b> - Ensure that evidence is not altered. A write blocker is any tool that permits read-only access to data storage devices without compromising the integrity of the data.
+                 There are two types of write blockers, Native and Tailgate. A Native device uses the same interface on for both in and out, for example a IDE to IDE write block. A Tailgate device uses one interface 
+                 for one side and a different one for the other, for example a Firewire to SATA write block.
+                <br><br><b>Label and Store Evidence </b> - Maintain a proper chain of custody. 
+                <br><br><br>
+                <b class="text-subs"><i>Challenges in Securing a Digital Crime Scene:</i></b>
+                <br>
+                <b>Volatile Data Loss</b> - Data stored in memory or running processes may be lost if not captured immediately.           
+                <br><br><b>Remote Access Threats</b> - Attackers might still have remote access and could delete or alter data.           
+                <br><br><b>Encryption and Password Protection</b> - Securing encrypted data without keys can be difficult.       
+                <br><br><b>Legal Jurisdiction Issues</b> - Digital evidence might be stored across multiple legal jurisdictions, complicating access and chain of custody.           
+                <br><br><b>Resource Constraints</b> - Limited time and specialized tools can hinder effective crime scene securing.    
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText5', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                </span>
+            </span> 
+    </div> 
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 blue tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText6', 'toggleIcon')">
+            Tools and techniques that can be used in an examination &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText6" style="display: none;">
+                <br><b class="text-subs">Imaging Tools :</b> 
+                <br><b>~ FTK Imager</b> (Forensic Toolkit Imager) - A free forensic imaging tool developed by AccessData.
+                Allows examiners to create disk images, view files and folders, and verify data integrity using hash values. It also supports mounting forensic images and extracting specific files for analysis.
+                <br><br><b>~ EnCase</b> (EnCase Forensic Software) - A comprehensive digital forensic tool often used in law enforcement and corporate investigations.
+                Enables the acquisition, imaging, and analysis of digital devices. It supports advanced search capabilities and analysis of various file formats, including deleted or hidden files.
+                <br><br><b>~ Autopsy</b> Open-source forensic software for analyzing forensic images and identifying evidence.
+                 Provides modules for file analysis, timeline creation, and email parsing. It integrates tools like Sleuth Kit for deeper file system analysis.
+                <br>These tools are used to create forensic copies of digital storage devices without modifying the original data.  
+                <br><br><br><b class="text-subs">Data Recovery Tools : </b> 
+                <br> <b>~ Recuva</b> - A lightweight and user-friendly data recovery tool.
+                Recovers accidentally deleted files from hard drives, memory cards, and USB drives. It supports quick and deep scans for locating recoverable data.
+                <br><br><b>~ R-Studio</b> - A professional-grade data recovery software tool for more complex scenarios.
+                Supports recovery from formatted drives, RAID setups, and even networked devices. It provides advanced file recovery options and works with a variety of file systems, such as NTFS, FAT, HFS+, and Ext.
+                <br>These are employed to retrieve lost, deleted, or corrupted data from storage devices. 
+                <br><br><br><b class="text-subs">Network Analysis Tools : </b>  
+                <br> <b>~  Wireshark</b> - A powerful network protocol analyzer.
+                Captures and inspects network traffic in real-time. It provides detailed insights into protocols, packets, and payloads, which is helpful for diagnosing network issues or investigating security breaches.
+                <br><br> <b>~  NetworkMiner</b> - A network forensic analysis tool that focuses on extracting data from packet captures.
+                Identifies hosts, files, credentials, and sessions from network traffic. It provides an intuitive interface for reconstructing and analyzing communication flows. 
+                <br>These tools analyze network traffic to identify malicious activity and security vulnerabilities.             
+                <br><br><br><b class="text-subs">Malware Analysis Tools : </b>
+                <br> <b>~ IDA Pro</b> (Interactive Disassembler Professional) - A sophisticated disassembler and debugger for analyzing compiled code.
+                Converts executable files into human-readable assembly language. It is highly customizable and supports reverse engineering to understand malware functionality. 
+                <br><br> <b>~ Cuckoo Sandbox</b> - An open-source automated malware analysis tool.
+                Provides a virtualized environment for safely executing suspicious files. It analyzes the behavior of malware, such as network activity, file system changes, and process modifications, and generates detailed reports. 
+                <br>These are used to dissect and study malicious software to understand its behavior and impact. 
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText6', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                </span>
+            </span> 
+    </div> 
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 grey tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText7', 'toggleIcon')">
+            Explanation of why there is a need to record all actions &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText7" style="display: none;">
+                <br><b>Evidence Integrity</b> - Maintaining a detailed log of actions ensures that evidence is not tampered with or altered unintentionally. Courts require evidence to be handled in a way that guarantees its authenticity and integrity. Failure to document every action can lead to challenges about whether the evidence is admissible or reliable.
+                <br><b class="text-subs4"><i>Example:</i></b> Suppose a forensic examiner retrieves a hard drive and starts imaging it. If they do not document when and how the drive was obtained, who handled it, and the imaging process, the opposing counsel in a court case might argue that the evidence could have been altered. Maintaining a log of hash values before and after imaging demonstrates the evidence has not been modified. 
+                <br><br><b>Reproducibility</b> - Recording all actions ensures that the investigation can be independently replicated by other analysts to verify findings. Forensic science relies on reproducibility to validate results and maintain credibility. 
+                <br><b class="text-subs4"><i>Example:</i></b> If an analyst discovers incriminating emails during an investigation, they must document the exact steps taken to extract and analyze the emails. Another investigator should be able to follow those steps and reach the same conclusions. Without a detailed record, the findings could be deemed unreliable or subjective.
+                <br><br><b>Accountability</b> - A comprehensive log provides an audit trail that clearly identifies who performed each action and when. This ensures accountability, demonstrating that the investigation was conducted in a professional and lawful manner.
+                <br><b class="text-subs4"><i>Example:</i></b> In a case where multiple investigators are involved, documenting actions prevents ambiguity about who was responsible for certain findings or handling specific evidence. For instance, if evidence is misplaced or altered, the audit trail can help identify the responsible party and prevent similar errors in the future. 
+                <br><br><b>Legal Requirements</b> - Many jurisdictions have specific legal requirements for documenting forensic investigations. A failure to comply with these requirements can render the entire investigation inadmissible.
+                <br><b class="text-subs4"><i>Example:</i></b> Under GDPR or other data protection laws, a forensic investigator handling personal data must log how the data was accessed, processed, and stored to prove compliance. Failure to document these actions could result in legal penalties or case dismissal.
+                <br><br><b>Incident Reconstruction</b> - A detailed record helps investigators reconstruct the timeline of events in a case, providing insights into how and when the incident occurred. This is especially important in complex investigations.
+                <br><b class="text-subs4"><i>Example:</i></b> If an investigation into a ransomware attack uncovers a series of malicious logins, documenting how these logs were obtained and analyzed helps establish a clear picture of the attack. This reconstruction may be crucial for prosecution or preventing future incidents.
+                <br><br><b>Transparency and Defense Against Challenges</b> - Detailed documentation protects investigators from accusations of bias, negligence, or tampering. It allows them to defend their methodology and findings confidently.
+                <br><b class="text-subs4"><i>Example:</i></b> If an opposing party questions the validity of digital evidence in court, presenting a meticulous record of actions (e.g., the forensic imaging process, hashing, and analysis steps) provides a strong defense against such challenges.
+                <br><br><b>Training and Knowledge Sharing</b> - Documenting all actions can serve as a reference for training purposes or for guiding future investigations. It ensures that the best practices and lessons learned are retained.
+                <br><b class="text-subs4"><i>Example:</i></b> A junior investigator working on a case can refer to the logs of a previous investigation to understand the correct procedures for imaging and analyzing a storage device.
+                <br><br><b>Avoiding Oversights and Errors</b> - Recording every step reduces the likelihood of overlooking important details or making errors during the investigation. It ensures that each step is deliberate and well-documented.
+                <br><b class="text-subs4"><i>Example:</i></b> During an investigation, if the examiner forgets to log an important step, such as verifying the hash of a copied file, it could raise doubts about the evidence. Detailed documentation prevents such mistakes from undermining the investigation.        
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText7', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                </span>
+            </span> 
+    </div> 
+
+    <div class="text container-cont">
+        <h3 class="explan-h3 blue tracking-in-expand-fwd" style="display: flex; align-items: center; cursor: pointer;" onclick="toggleVisibility('hiddenText8', 'toggleIcon')">
+            Explanation of the techniques to acquire data &nbsp;&nbsp;
+            <i id="toggleIcon" class="fas fa-chevron-down" style="margin-left: 10px;"></i></h3>
+            <span id="hiddenText8" style="display: none;">
+                <br><b>Live Data Acquisition</b> - Capturing volatile data from a running system. 
+                <br><br><b class="text-subs4"><i>Potential Risks:</i></b> Data might change or be lost if not acquired properly.  
+                <br><br><b class="text-subs5"><i>Limitations:</i></b> Requires specialized tools and expertise to avoid system disruption. 
+                <br><br><br><b>Dead Data Acquisition</b> - Imaging storage devices for forensic analysis.             
+                <br><br><b class="text-subs4"><i>Potential Risks:</i></b> If not handled correctly, there is a risk of modifying original data.            
+                <br><br><b class="text-subs5"><i>Limitations:</i></b> Encrypted or corrupted drives may hinder full data retrieval. 
+                <br><br><br><b>Network Forensics</b> - Monitoring and capturing network traffic.             
+                <br><br><b class="text-subs4"><i>Potential Risks:</i></b> Encryption can obscure traffic data.             
+                <br><br><b class="text-subs5"><i>Limitations:</i></b> High volumes of data make it challenging to filter relevant evidence. 
+                <br><br><br><b>Memory Forensics</b> - Analyzing RAM for malicious activities.             
+                <br><br><b class="text-subs4"><i>Potential Risks:</i></b> RAM data is highly volatile and may be lost on system shutdown.             
+                <br><br> <b class="text-subs5"><i>Limitations:</i></b> Extracted memory dumps may contain incomplete or fragmented data.            
+                <span style="color: blue; cursor: pointer;" onclick="toggleVisibility('hiddenText8', 'toggleIcon')">
+                    <i class="fas fa-chevron-up"></i> 
+                    <!-- hide -->
+                </span>
+            </span> 
+    </div> 
+    </section>
+
+     <!-- Footer -->
+     <footer>
+      <nav class="foot-nav">
+        <ul class="nav-links">
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="page2.html" >Legislation</a></li>
+          <li><a href="page3.html">Hacking</a></li>
+          <li><a href="page4.html" class="active">Forensics</a></li>                
+          <li><a href="index.html#About">About</a></li>
+          <li><a href="index.html#Contact">Contact</a></li>
+          <li><a href="page5.html">Quiz</a></li>
+      </ul>
+      </nav>
+      <p class="copy">&copy; 2025 HTML Heroes. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
